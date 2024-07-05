@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid black; */
+}
+
+nav{
+    height: auto;
+    padding: 20px 15px;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.color{
+    display: flex;
+    align-items: center;
+}
+.color .col{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #111;
+    margin-left: 5px;
+}
+
+nav .links{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-right: 20px;
+}
+
+nav .links a{
+    color: #111;
+    text-decoration: none;
+
+}
+
+nav .links .lang .in{
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.secNav{
+    height: auto;
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    
+}
+
+.secNav a{
+    text-decoration: none;
+    color: #111;
+    font-weight: 300;
+
+}
+
+.hero{
+    height: calc(100% - 98px);
+    width: 100%;
+    /* background-color: aqua; */
+}
+.hero .content{
+    height: 40%;
+    width: 100%;
+    /* background-color: blueviolet; */
+    display: flex;
+    overflow-x: scroll;
+}
+.hero .content::-webkit-scrollbar{
+    background-color: transparent;
+    height: 5px;
+    width: 40px;
+
+}
+.hero .content::-webkit-scrollbar-thumb{
+    background-color: orangered;
+    border-radius: 30px;
+}   
+.hero .elem{
+    flex-shrink: 0;
+    width: 50%;
+    /* border: 2px solid black; */
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero .elem{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+}
+.hero .elem .txt{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 45px;
+}
+.elem1 .txt{
+    left: 60px;
+}
+.elem2 .txt{
+    left: 140px;
+}
+.elem3 .txt{
+    left: 170px;
+}
+.txt .no{
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 10px;
+}
+.hero .elem h1{
+    font-size: 90px;
+    font-weight: 200;
+}
+
+.imgContainer{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+}
+.imgContainer::-webkit-scrollbar{
+   display: none;
+}
+.imgContainer img{
+    flex-shrink: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+}
